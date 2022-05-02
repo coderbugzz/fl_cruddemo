@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "18603497428",
+    "project_id": "fir-cruddemo-a2317",
+    "storage_bucket": "fir-cruddemo-a2317.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18603497428:android:fddbe6d84727d679336841",
+        "android_client_info": {
+          "package_name": "com.freecode.fl_cruddemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18603497428-he5cm1t26mclkf37rsmai7ej6fup0rge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQIJOvtYyqpHQ2B1oeFVL-ChD9S3nT6Yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18603497428-he5cm1t26mclkf37rsmai7ej6fup0rge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
