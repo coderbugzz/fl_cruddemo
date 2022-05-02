@@ -1,12 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-
 import '../models/response.dart';
 
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 final CollectionReference _Collection = _firestore.collection('Employee');
 
 class FirebaseCrud {
-  static String? Uid;
 
   static Future<Response> addEmployee({
     required String name,
@@ -16,7 +14,7 @@ class FirebaseCrud {
 
     Response response = Response();
     DocumentReference documentReferencer =
-        _Collection.doc(Uid);
+        _Collection.doc();
 
     Map<String, dynamic> data = <String, dynamic>{
       "employee_name": name,
@@ -70,7 +68,7 @@ class FirebaseCrud {
         return response;
   }
 
-  static Stream<QuerySnapshot> readItems() {
+  static Stream<QuerySnapshot> readEmployee() {
     CollectionReference notesItemCollection =
         _Collection;
 
@@ -95,7 +93,7 @@ class FirebaseCrud {
             response.message = e;
         });
 
-   return response;   
+   return response;
   }
-  
+
 }
