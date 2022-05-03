@@ -1,5 +1,3 @@
-// ignore_for_file: prefer_interpolation_to_compose_strings
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:fl_cruddemo/models/employee.dart';
 import 'package:fl_cruddemo/page/addpage.dart';
@@ -16,7 +14,7 @@ class ListPage extends StatefulWidget {
 }
 
 class _ListPage extends State<ListPage> {
-  final Stream<QuerySnapshot> collectionReference = FirebaseCrud.readItems();
+  final Stream<QuerySnapshot> collectionReference = FirebaseCrud.readEmployee();
   //FirebaseFirestore.instance.collection('Employee').snapshots();
   @override
   Widget build(BuildContext context) {
